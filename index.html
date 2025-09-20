@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAPS.ai - Spiritual Guidance & Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <div class="min-h-screen bg-gradient relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="background-elements">
+                <div class="decorative-circle circle-1"></div>
+                <div class="decorative-circle circle-2"></div>
+                <div class="decorative-circle circle-3"></div>
+                <div class="decorative-circle circle-4"></div>
+            </div>
+
+            <!-- Hero background with parallax effect -->
+            <div class="hero-background"></div>
+
+            <header class="header">
+                <div class="container">
+                    <!-- BAPS Logo with title -->
+                    <div class="logo-section animate-fade-in">
+                        <div class="logo-container">
+                            <img src="public/logo1.png" alt="BAPS Sanstha Logo" class="logo-image">
+                    </div>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <!-- Enhanced hero section -->
+                <section class="hero-section">
+                    <h1 class="hero-title animate-slide-up">Welcome to BAPS</h1>
+
+                    <!-- Decorative divider -->
+                    <div class="decorative-divider animate-slide-up-delay">
+                        <div class="divider-line"></div>
+                        <div class="divider-dot"></div>
+                        <div class="divider-line"></div>
+                    </div>
+
+                    <p class="hero-subtitle animate-slide-up-delay">
+                        Fostering Hindu ideals of faith, unity, and selfless service worldwide
+                    </p>
+                    <div class="animate-slide-up-delay">
+                        <button class="cta-button" onclick="navigateToChat()">
+                            Explore Now
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Enhanced content with temple imagery -->
+                <section class="content-section">
+                    <div class="content-grid">
+                        <div class="image-section animate-slide-up-delay">
+                            <div class="image-container">
+                                <div class="rotating-image-container">
+                                    <img id="rotatingImage" src="public/i1.jpeg" alt="BAPS Temple" class="rotating-image">
+                                </div>
+                                <!-- Floating elements -->
+                                <div class="floating-element floating-1"></div>
+                                <div class="floating-element floating-2"></div>
+                            </div>
+                        </div>
+
+                        <div class="text-section animate-slide-up-delay">
+                            <h2 class="section-title">Spiritual Guidance & Community</h2>
+                            <p class="section-text">
+                                BAPS Swaminarayan Sanstha is a spiritual, volunteer-driven organization dedicated to improving society
+                                through individual growth by fostering the Hindu ideals of faith, unity, and selfless service.
+                            </p>
+                            <p class="section-text">
+                                Our AI chatbot provides instant access to BAPS teachings, helps you find local centers, and guides you on
+                                your spiritual journey with authentic wisdom from our tradition.
+                            </p>
+
+                            <!-- Quick features list -->
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <div class="feature-dot"></div>
+                                    <span>24/7 spiritual guidance and teachings</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-dot"></div>
+                                    <span>Find BAPS centers and events worldwide</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-dot"></div>
+                                    <span>Learn about volunteer opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Statistics section -->
+                <section class="statistics-section">
+                    <div class="text-center">
+                        <h2 class="section-title">BAPS Worldwide Impact</h2>
+                        <div class="divider-container">
+                            <div class="divider-line"></div>
+                            <div class="divider-dot"></div>
+                            <div class="divider-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="statistics-grid">
+                        <div class="statistic-item">
+                            <div class="statistic-number" data-end="1200">0</div>
+                            <div class="statistic-label">Temples & Centers</div>
+                        </div>
+                        <div class="statistic-item">
+                            <div class="statistic-number" data-end="65000">0</div>
+                            <div class="statistic-label">Volunteers</div>
+                        </div>
+                        <div class="statistic-item">
+                            <div class="statistic-number" data-end="50">0</div>
+                            <div class="statistic-label">Countries</div>
+                        </div>
+                        <div class="statistic-item">
+                            <div class="statistic-number" data-end="100">0</div>
+                            <div class="statistic-label">Years of Service</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Feature highlights -->
+                <section class="features-section">
+                    <div class="text-center">
+                        <h2 class="section-title">How Our Chatbot Can Help You</h2>
+                        <div class="divider-container">
+                            <div class="divider-line"></div>
+                            <div class="divider-dot"></div>
+                            <div class="divider-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="features-grid animate-slide-up-delay-2">
+                        <div class="feature-card">
+                            <img src="public/i5.jpeg" alt="Teachings" class="feature-icon">
+                            <h3 class="feature-card-title">Spiritual Teachings</h3>
+                            <p class="feature-card-text">
+                                Access authentic Hindu philosophy, daily prayers, and spiritual practices from BAPS tradition
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon-placeholder">
+                                <svg class="feature-svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-card-title">Find Centers</h3>
+                            <p class="feature-card-text">
+                                Locate BAPS temples and centers worldwide, get directions, and find local events and activities
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon-placeholder red">
+                                <svg class="feature-svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-card-title">Community Service</h3>
+                            <p class="feature-card-text">
+                                Discover volunteer opportunities, seva activities, and ways to contribute to your community
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials section -->
+                <section class="testimonials-section">
+                    <div class="text-center">
+                        <h2 class="section-title">Community Voices</h2>
+                        <div class="divider-container">
+                            <div class="divider-line"></div>
+                            <div class="divider-dot"></div>
+                            <div class="divider-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-container">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <img id="testimonialImage" src="public/logo1.png" alt="Testimonial" class="testimonial-avatar">
+                                <blockquote id="testimonialText" class="testimonial-quote">
+                                    "BAPS has transformed my spiritual journey. The teachings and community support have brought peace and purpose to my life."
+                                </blockquote>
+                                <div id="testimonialName" class="testimonial-name">Rajesh Patel</div>
+                                <div id="testimonialLocation" class="testimonial-location">London, UK</div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial indicators -->
+                        <div class="testimonial-indicators">
+                            <button class="indicator active" data-index="0"></button>
+                            <button class="indicator" data-index="1"></button>
+                            <button class="indicator" data-index="2"></button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Enhanced CTA section -->
+                <section class="cta-section">
+                    <div class="cta-container">
+                        <h2 class="section-title">Begin Your Spiritual Journey</h2>
+                        <p class="cta-text">
+                            Connect with centuries of wisdom and join a global community dedicated to spiritual growth and service
+                        </p>
+
+                        <div class="animate-slide-up-delay-2">
+                            <button class="cta-button large" onclick="navigateToChat()">
+                                Ask the BAPS Chatbot
+                            </button>
+                            <p class="cta-subtext">
+                                Get instant answers about BAPS teachings, events, and spiritual guidance
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <img src="public/logo1.png" alt="BAPS Logo" class="footer-logo">
+                        <p class="footer-text">
+                            © <span id="currentYear"></span> 
+                            BAPS<span class="italic">.ai</span> — All rights reserved.
+                        </p>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- Chat Page -->
+    <div id="chatPage" class="page">
+        <div class="chat-container">
+            <header class="chat-header">
+                <div class="chat-header-content">
+                    <div class="chat-header-left">
+                        <button class="back-button" onclick="navigateToHome()">
+                            <svg class="back-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="chat-brand">
+                            <div class="chat-logo">
+                                <img src="public/logo1.png" alt="BAPS Logo" class="chat-logo-image">
+                            </div>
+                            <div>
+                                <h1 class="chat-title">BAPS<span class="italic">.ai</span></h1>
+                                <p class="chat-subtitle">Gemini AI-powered spiritual guidance with comprehensive knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-header-right">
+                        <button class="clear-button" onclick="clearChatHistory()" title="Clear chat history">
+                            <svg class="clear-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat-messages">
+                <div class="messages-container">
+                    <!-- Welcome message for new users -->
+                    <div id="welcomeMessage" class="welcome-message">
+                        <div class="welcome-card">
+                            <div class="welcome-avatar">
+                                <img src="public/logo1.png" alt="Welcome" class="welcome-image">
+                            </div>
+                            <h2 class="welcome-title">Welcome to BAPS.ai</h2>
+                            <p class="welcome-text">
+                                I'm powered by Google's Gemini AI and have access to comprehensive knowledge. Ask me anything about BAPS teachings, history, philosophy, activities, and community services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="messagesList"></div>
+                    <div id="typingIndicator" class="typing-indicator hidden">
+                        <div class="typing-avatar">
+                            <img src="public/logo1.png" alt="BAPS Bot" class="typing-avatar-image">
+                        </div>
+                        <div class="typing-bubble">
+                            <span class="typing-text">BAPS Bot is typing</span>
+                            <div class="typing-dots">
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quickReplies" class="quick-replies">
+                <p class="quick-replies-title">Quick questions you can ask:</p>
+                <div class="quick-replies-buttons">
+                    <button class="quick-reply-button" onclick="sendQuickReply('Find BAPS centers near me')">Find BAPS centers near me</button>
+                    <button class="quick-reply-button" onclick="sendQuickReply('What are BAPS teachings?')">What are BAPS teachings?</button>
+                    <button class="quick-reply-button" onclick="sendQuickReply('Upcoming events and festivals')">Upcoming events and festivals</button>
+                    <button class="quick-reply-button" onclick="sendQuickReply('How can I volunteer?')">How can I volunteer?</button>
+                    <button class="quick-reply-button" onclick="sendQuickReply('Daily prayers and rituals')">Daily prayers and rituals</button>
+                    <button class="quick-reply-button" onclick="sendQuickReply('BAPS history and tradition')">BAPS history and tradition</button>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <input 
+                        type="text" 
+                        id="chatInput" 
+                        class="chat-input" 
+                        placeholder="Ask about BAPS teachings, history, philosophy, activities..."
+                        onkeypress="handleKeyPress(event)"
+                    >
+                    <button class="send-button" onclick="sendMessage()" id="sendButton">
+                        <svg class="send-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/rotating-image.js"></script>
+    <script src="js/statistics-counter.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
